@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juli Astaw I MADE</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./font-awesome/css/all.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- header -->
+    <div class="container px-6 py-4 w-full">
+      <div class="container w-full">
+        <div
+          class="container nav-bar flex items-center justify-between w-full h-full"
+        >
+          <div class="logo container w-[33%] flex items-center gap-0">
+            <h2>
+              <span class="text-blue-700 text-3xl font-bold">j</span>
+            </h2>
+            <h2 class="font-semibold text-2xl">uliasta</h2>
+          </div>
+          <div
+            class="nav-bar relative flex flex-row justify-between items-center"
+          >
+            <button id="hamburger-toggle" class="flex flex-col gap-2 lg:hidden">
+              <span
+                class="line transition-all ease-in-out duration-300 origin-top-left"
+              ></span>
+              <span
+                class="line transition-all ease-in-out duration-300 origin-center"
+              ></span>
+              <span
+                class="line transition-all ease-in-out duration-300 origin-bottom-left"
+              ></span>
+            </button>
+            <div
+              id="nav-menu"
+              class="nav-menu absolute w-[250px] h-[90vh] top-[2.6rem] -right-[20rem] flex flex-col gap-10 px-16 py-8 transition-all ease-in-out duration-300 bg-white lg:top-0 lg:flex-row lg:w-[700px] lg:justify-center lg:p-1 lg:h-full lg:items-center lg:text-xl lg:gap-12 lg:bg-transparent"
+            >
+              <ul>
+                <li class="flex flex-col items-center w-fit group">
+                  <a href="#" class="hover:text-blue-700">Home</a>
+                  <span
+                    class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                  ></span>
+                </li>
+              </ul>
+              <ul>
+                <li class="flex flex-col items-center w-fit group">
+                  <a href="#" class="hover:text-blue-700">About Me</a>
+                  <span
+                    class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                  ></span>
+                </li>
+              </ul>
+              <ul>
+                <li class="flex flex-col items-center w-fit group">
+                  <a href="#" class="hover:text-blue-700">Skills</a>
+                  <span
+                    class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                  ></span>
+                </li>
+              </ul>
+              <ul>
+                <li class="flex flex-col items-center w-fit group">
+                  <a href="#" class="hover:text-blue-700">Projects</a>
+                  <span
+                    class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                  ></span>
+                </li>
+              </ul>
+              <ul>
+                <li class="flex flex-col items-center w-fit group">
+                  <a href="#" class="hover:text-blue-700">Contact</a>
+                  <span
+                    class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                  ></span>
+                </li>
+              </ul>
+
+              <ul class="lg:hidden">
+                <li>
+                  <div
+                    class="flex light-dark-mode w-[33%] lg:flex lg:justify-center lg:items-center gap-2"
+                  >
+                    <span>Light</span>
+                    <div class="toggle">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="toggle-sm"
+                        class="hidden"
+                      />
+                      <label
+                        for="toggle-sm"
+                        class="flex gap-2 items-center cursor-pointer"
+                      >
+                        <div
+                          class="toggle w-14 h-6 rounded-full bg-slate-500 flex items-center p-1"
+                        >
+                          <div
+                            class="toggle-circle w-5 h-5 rounded-full bg-black transition-all ease-in-out duration-300 flex justify-center items-center text-white"
+                          >
+                            <i class="fa-solid fa-sun"></i>
+                          </div>
+                        </div>
+                      </label>
+                    </div>
+                    <span>Dark</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            class="light-dark-mode hidden w-[33%] lg:flex lg:justify-center lg:items-center gap-2"
+          >
+            <span>Light mode</span>
+            <div class="toggle">
+              <input type="checkbox" name="" id="toggle-lg" class="hidden" />
+              <label
+                for="toggle-lg"
+                class="flex gap-2 items-center cursor-pointer"
+              >
+                <div
+                  class="toggle w-14 h-6 rounded-full bg-slate-300 flex items-center p-1"
+                >
+                  <div
+                    class="toggle-circle w-5 h-5 rounded-full bg-black transition-all ease-in-out duration-300 flex justify-center items-center text-white"
+                  >
+                    <i class="fa-solid fa-sun"></i>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <span>Dark mode</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endheader -->
+
+    <!-- hero  -->
+
+    <div class="container px-6 py-4 lg:top-0 lg:-mt-16">
+      <div class="flex flex-col w-full h-[100vh] lg:flex-row-reverse">
+        <div class="hero w-full h-full flex justify-center items-center">
+          <div
+            class="hero-img w-[20rem] h-[20rem] rounded-full border-double border-8 border-slate-200 shadow-2xl lg:w-[30rem] lg:h-[30rem]"
+          ></div>
+        </div>
+        <div
+          class="text-wrapper w-full h-full flex justify-center items-center"
+        >
+          <div class="text w-3/4 h-auto lg:w-1/2">
+            <h2 class="text-3xl font-bold lg:text-6xl">Hello there,</h2>
+            <p class="text-slate-800 text-xl -mt-2 lg:m-0 lg:text-3xl">
+              My Name is
+              <span class="font-semibold text-blue-500">Juli Asta</span>
+            </p>
+            <p class="text-slate-700 lg:text-xl">I'm from Bali</p>
+
+            <div class="socmed flex gap-2 mt-4">
+              <a
+                href="#"
+                class="flex justify-center items-center w-auto h-auto text-xl lg:text-4xl"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- endhero -->
+    <script src="./src/javascript/script.js"></script>
+  </body>
+</html>
