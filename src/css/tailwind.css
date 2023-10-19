@@ -19,7 +19,7 @@
 }
 
 .nav-active {
-  @apply -right-full;
+  @apply scale-100;
 }
 
 #toggle-lg:checked ~ label div.toggle-circle {
@@ -33,4 +33,10 @@
   @apply bg-[url('../img/profile.jpeg')];
   @apply bg-cover;
   @apply bg-top;
+}
+
+.about-img {
+  @apply bg-[url('../img/profile2.jpg')];
+  @apply bg-cover;
+  @apply bg-center;
 }

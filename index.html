@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./font-awesome/css/all.css" />
   </head>
-  <body class="overflow-x-hidden">
+  <body class="">
     <!-- header -->
     <div class="container px-6 py-4 w-full">
       <div class="container w-full">
         <div
-          class="container nav-bar flex items-center justify-between w-full h-full"
+          class="container nav-bar flex items-center justify-between w-full h-full relative"
         >
           <div class="logo container w-[33%] flex items-center gap-0">
             <h2>
@@ -20,9 +20,7 @@
             </h2>
             <h2 class="font-semibold text-2xl">uliasta</h2>
           </div>
-          <div
-            class="nav-bar relative flex flex-row justify-between items-center"
-          >
+          <div class="nav-bar flex flex-row justify-between items-center">
             <button id="hamburger-toggle" class="flex flex-col gap-2 lg:hidden">
               <span
                 class="line transition-all ease-in-out duration-300 origin-top-left"
@@ -36,7 +34,7 @@
             </button>
             <div
               id="nav-menu"
-              class="nav-menu absolute w-[250px] h-[90vh] top-[2.6rem] -right-[20rem] flex flex-col gap-10 px-16 py-8 transition-all ease-in-out duration-300 bg-white lg:top-0 lg:flex-row lg:w-[700px] lg:justify-center lg:p-1 lg:h-full lg:items-center lg:text-xl lg:gap-12 lg:bg-transparent"
+              class="nav-menu absolute w-[250px] h-[90vh] top-[2.6rem] right-0 flex scale-0 origin-top-right flex-col gap-10 px-16 py-8 transition-all ease-in-out duration-300 bg-white lg:top-0 lg:flex-row lg:w-[700px] lg:justify-center lg:p-1 lg:h-full lg:items-center lg:text-xl lg:scale-100 lg:gap-12 lg:bg-transparent lg:left-10 xl:left-1/4"
             >
               <ul>
                 <li class="flex flex-col items-center w-fit group">
@@ -143,18 +141,18 @@
 
     <!-- hero  -->
 
-    <div class="container px-6 py-4 lg:top-0 lg:-mt-16">
-      <div class="flex flex-col w-full h-[100vh] lg:flex-row-reverse">
+    <div class="container px-6 py-4 -mt-10 lg:top-0 lg:-mt-16">
+      <div class="flex flex-col w-full h-[100vh] md:flex-row-reverse">
         <div class="hero w-full h-full flex justify-center items-center">
           <div
-            class="hero-img w-[20rem] h-[20rem] rounded-full border-double border-8 border-slate-200 shadow-2xl lg:w-[30rem] lg:h-[30rem]"
+            class="hero-img w-[20rem] h-[20rem] rounded-full border-double border-8 border-slate-200 shadow-2xl lg:w-[25rem] lg:h-[25rem]"
           ></div>
         </div>
         <div
-          class="text-wrapper w-full h-full flex justify-center items-center"
+          class="text-wrapper w-full h-full flex justify-center items-center -mt-[18rem] md:-mt-0 lg:mt-0"
         >
-          <div class="text w-3/4 h-auto lg:w-1/2">
-            <h2 class="text-3xl font-bold lg:text-6xl">Hello there,</h2>
+          <div class="text w-3/4 h-auto lg:w-3/4 xl:w-1/2">
+            <h2 class="text-3xl font-bold lg:text-5xl">Hello there,</h2>
             <p class="text-slate-800 text-xl -mt-2 lg:m-0 lg:text-3xl">
               My Name is
               <span class="font-semibold text-blue-500">Juli Asta</span>
@@ -191,7 +189,7 @@
             </div>
 
             <div
-              class="cv border-2 border-blue-700 flex justify-center items-center p-1 w-fit h-fit rounded-2xl mt-3 group hover:bg-blue-700"
+              class="cv border-2 border-blue-700 flex justify-center items-center p-[3px] w-fit h-fit rounded-2xl mt-3 group hover:bg-blue-700"
             >
               <button
                 class="flex justify-center items-center w-36 h-5 bg-blue-700 p-4 rounded-xl group-hover:bg-white"
@@ -206,6 +204,31 @@
       </div>
     </div>
     <!-- endhero -->
+
+    <!-- about me -->
+
+    <div
+      class="container bg-slate-300 w-full h-auto p-4 lg:flex lg:justify-center lg:py-0 lg:px-20 xl:px-[12.5rem]"
+    >
+      <div class="flex justify-center items-center h-[20rem]">
+        <div
+          class="about-img w-[10rem] h-[10rem] rounded-full lg:rounded-none lg:h-full lg:w-[20rem]"
+        ></div>
+      </div>
+      <div class="about text-center lg:text-left lg:p-6">
+        <h1 class="text-3xl font-bold text-blue-400 lg:text-center">
+          About Me
+        </h1>
+        <h2 class="text-xl font-semibold">I Made Juli Astawa</h2>
+        <p class="text-slate-700">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          est laudantium recusandae quo ducimus odio iusto aliquid magnam
+          officiis earum?
+        </p>
+      </div>
+    </div>
+
+    <!--  end about me -->
     <script src="./src/javascript/script.js"></script>
   </body>
 </html>
