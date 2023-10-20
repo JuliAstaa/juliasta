@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.line {
+.hamburger-line {
   @apply block w-[30px] h-[2px] bg-black;
 }
 
