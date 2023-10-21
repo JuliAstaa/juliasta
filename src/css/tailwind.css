@@ -40,3 +40,7 @@
   @apply bg-cover;
   @apply bg-center;
 }
+
+.tic-tac-toe {
+  @apply bg-[url('../img/tic-tac-toe.png')] bg-cover bg-center;
+}
