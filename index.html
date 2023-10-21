@@ -213,10 +213,14 @@
           I Made Juli Astawa
         </h2>
         <p class="text-slate-700 dark:text-slate-300">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-          est laudantium recusandae quo ducimus odio iusto aliquid magnam
-          officiis earum?
+          Hello everyone, my name is Juli, I live in a small village in Bali. I
+          started to love the world of coding since I was in high school, at
+          that time I managed to create a simple web that displays the words
+          'Hello World', since then I have continued to learn about web
+          developers and improve my skills, and now I can create my own personal
+          portfolio website.
         </p>
+        <p class="text-slate-800 dark:text-slate-300">Nice to meet you!</p>
       </div>
     </div>
 
@@ -345,8 +349,19 @@
     <!-- end skills   -->
 
     <!-- project -->
-    <div class="project bg-slate-100 w-full h-auto">
-      <div class="containe w-full h-full p-16 flex flex-col gap-4 lg:flex-row">
+    <div class="project bg-slate-100 w-full h-auto dark:bg-slate-900">
+      <div class="container">
+        <div class="projects w-100 h-full flex relative pt-10 justify-end">
+          <span
+            class="text-center text-2xl font-semibold text-white p-4 w-3/4 bg-blue-500 h-full relative before:-translate-y-6 before:origin-top-left before:w-20 before:h-20 before:absolute before:left-0 before:top-0 before:rotate-45 before:bg-slate-100 before:-translate-x-0 lg:w-1/2 dark:before:bg-slate-900"
+            >PROJECTS</span
+          >
+        </div>
+      </div>
+      <div
+        class="container w-full h-full p-16 flex flex-col gap-4 lg:flex-row lg:justify-between"
+      >
+        <!-- birthday -->
         <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
           <div class="img flex flex-col relative group">
             <div
@@ -362,31 +377,77 @@
                 />
               </div>
               <div
-                class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-end"
+                class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-center items-center"
               >
-                <h2 class="sm:text-lg text-white">
-                  Personal Website Using HTML CSS and JAVASCRIPT
-                </h2>
+                <h2 class="sm:text-lg text-white">Birthday Countdown</h2>
                 <p class="sm:text-base text-[10px] text-slate-200">
-                  Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
-                  Nesciunt, neque? Omnis ipsa quam culpa rerum architecto
-                  maiores nihil ducimus quia!
+                  A web application for counting down birthdays.
                 </p>
-                <a href="" class="bg-white rounded-lg mt-2"
+                <p class="sm:text-base text-[10px] text-white font-semibold">
+                  Click for more...
+                </p>
+                <a
+                  target="_blank"
+                  href="https://github.com/JuliAstaa/birthday-countdown"
+                  class="bg-white rounded-lg mt-2 w-1/2"
                   ><i class="fa-regular fa-paper-plane"></i> Visit</a
                 >
               </div>
             </div>
           </div>
           <div
-            class="fixed top-0 left-0 w-full h-[100vh] bg-slate-200 modal hidden justify-center items-center z-[999]"
+            class="fixed top-0 left-0 w-full h-[100vh] bg-transparent modal hidden justify-center items-center z-[999]"
           >
-            <div class="w-3/4 h-3/4 bg-slate-300">
-              <button class="back">Kembali</button>
-              Modal 1
+            <div
+              class="w-3/4 h-auto bg-slate-100 rounded-lg overflow-hidden dark:bg-slate-900"
+            >
+              <div class="w-full h-fit flex justify-end">
+                <button class="back bg-red-600 p-4 text-white font-bold">
+                  X
+                </button>
+              </div>
+              <div class="flex flex-col items-center justify-center p-16">
+                <div class="img w-1/2 h-1/2">
+                  <img src="./src/img/birthday-countdown.png" alt="" />
+                </div>
+                <div class="modal-title mt-4">
+                  <h1 class="font-bold text-2xl capitalize dark:text-white">
+                    A web application for counting down birthdays
+                  </h1>
+                </div>
+                <p class="text-slate-700 text-center dark:text-slate-300">
+                  A web application to count down birthdays, using html, css,
+                  and javascript. To use it you just need to enter your birthday
+                  date, then click the 'Calculate' button. And the result will
+                  appear. The results are days, hours, minutes, and seconds.
+                </p>
+                <br />
+                <br />
+                <div class="m-button flex gap-4">
+                  <a
+                    target="_blank"
+                    href="https://github.com/JuliAstaa/birthday-countdown"
+                    class="rounded-lg bg-blue-200 p-2 group hover:bg-blue-100"
+                  >
+                    <i class="fa-solid fa-folder text-orange-400"></i>
+                    <span class="group-hover:font-semibold"
+                      >Visit repository</span
+                    >
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://juliastaa.github.io/birthday-countdown/"
+                    class="rounded-lg bg-blue-200 p-2 group hover:bg-blue-100"
+                  >
+                    <i class="fa-solid fa-globe text-blue-500"></i>
+                    <span class="group-hover:font-semibold">Live demo</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- temperature -->
         <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
           <div class="img flex flex-col relative group">
             <div
@@ -402,28 +463,156 @@
                 />
               </div>
               <div
-                class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-end"
+                class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-center items-center"
               >
-                <h2 class="sm:text-lg text-white">
-                  Personal Website Using HTML CSS and JAVASCRIPT
-                </h2>
+                <h2 class="sm:text-lg text-white">Temperature Conversion</h2>
                 <p class="sm:text-base text-[10px] text-slate-200">
-                  Lorem ipsum, dolor sit amet consec tetur adipisicing elit.
-                  Nesciunt, neque? Omnis ipsa quam culpa rerum architecto
-                  maiores nihil ducimus quia!
+                  Website for converting temperature
                 </p>
-                <a href="" class="bg-white rounded-lg mt-2"
+                <p class="sm:text-base text-[10px] text-white font-semibold">
+                  Click for more...
+                </p>
+                <a
+                  target="_blank"
+                  href="https://github.com/JuliAstaa/TemperatureConversion"
+                  class="bg-white rounded-lg mt-2 w-1/2"
                   ><i class="fa-regular fa-paper-plane"></i> Visit</a
                 >
               </div>
             </div>
           </div>
           <div
-            class="fixed top-0 left-0 w-full h-[100vh] bg-slate-200 modal hidden justify-center items-center z-[999]"
+            class="fixed top-0 left-0 w-full h-[100vh] bg-transparent modal hidden justify-center items-center z-[999]"
           >
-            <div class="w-3/4 h-3/4 bg-slate-300">
-              <button class="back">Kembali</button>
-              Modal 2
+            <div
+              class="w-3/4 h-auto bg-slate-100 rounded-lg overflow-hidden dark:bg-slate-900"
+            >
+              <div class="w-full h-fit flex justify-end">
+                <button class="back bg-red-600 p-4 text-white font-bold">
+                  X
+                </button>
+              </div>
+              <div class="flex flex-col items-center justify-center p-16">
+                <div class="img w-1/2 h-1/2">
+                  <img src="./src/img/temperature-conversion.png" alt="" />
+                </div>
+                <div class="modal-title mt-4">
+                  <h1 class="font-bold text-2xl capitalize dark:text-white">
+                    Temperature Conversion
+                  </h1>
+                </div>
+                <p class="text-slate-700 text-center dark:text-slate-300">
+                  Website to convert temperature, this web I made using simple
+                  html css and javascript, how to use it is that you just enter
+                  the type of temperature you want to convert and the nominal in
+                  the left input, and enter the type of temperature to be
+                  converted, later the results will appear on the right
+                </p>
+                <br />
+                <br />
+                <div class="m-button flex gap-4">
+                  <a
+                    target="_blank"
+                    href="https://github.com/JuliAstaa/TemperatureConversion"
+                    class="rounded-lg bg-blue-200 p-2 group hover:bg-blue-100"
+                  >
+                    <i class="fa-solid fa-folder text-orange-400"></i>
+                    <span class="group-hover:font-semibold"
+                      >Visit repository</span
+                    >
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://juliastaa.github.io/TemperatureConversion/"
+                    class="rounded-lg bg-blue-200 p-2 group hover:bg-blue-100"
+                  >
+                    <i class="fa-solid fa-globe text-blue-500"></i>
+                    <span class="group-hover:font-semibold">Live demo</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tic-tac-toe -->
+        <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+          <div class="img flex flex-col relative group">
+            <div
+              class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
+            >
+              <div
+                class="w-full h-full transition-all ease-in-out duration-500 group-hover:scale-110"
+              >
+                <img src="./src/img/tic-tac-toe.png" alt="" class="opacity-1" />
+              </div>
+              <div
+                class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-center items-center"
+              >
+                <h2 class="sm:text-lg text-white">Tic Tac Toe</h2>
+                <p class="sm:text-base text-[10px] text-slate-200">
+                  Tic-tac-toe game website
+                </p>
+                <p class="sm:text-base text-[10px] text-white font-semibold">
+                  Click for more...
+                </p>
+                <a
+                  target="_blank"
+                  href="https://github.com/JuliAstaa/tic-tac-toe"
+                  class="bg-white rounded-lg mt-2 w-1/2"
+                  ><i class="fa-regular fa-paper-plane"></i> Visit</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="fixed top-0 left-0 w-full h-[100vh] bg-transparent modal hidden justify-center items-center z-[999]"
+          >
+            <div
+              class="w-3/4 h-auto bg-slate-100 rounded-lg overflow-hidden dark:bg-slate-900"
+            >
+              <div class="w-full h-fit flex justify-end">
+                <button class="back bg-red-600 p-4 text-white font-bold">
+                  X
+                </button>
+              </div>
+              <div class="flex flex-col items-center justify-center p-16">
+                <div class="img w-1/2 h-1/2">
+                  <img src="./src/img/tic-tac-toe.png" alt="" />
+                </div>
+                <div class="modal-title mt-4">
+                  <h1 class="font-bold text-2xl capitalize dark:text-white">
+                    Tic-tac-toe
+                  </h1>
+                </div>
+                <p class="text-slate-700 text-center dark:text-slate-300">
+                  simple tic-tac-toe game using html css and javascript, how to
+                  play, you click on an empty field and then an X or O will
+                  appear depending on who is on whose turn. There is a 'restart'
+                  button to repeat the game.
+                </p>
+                <br />
+                <br />
+                <div class="m-button flex gap-4">
+                  <a
+                    target="_blank"
+                    href="https://github.com/JuliAstaa/tic-tac-toe"
+                    class="rounded-lg bg-blue-200 p-2 group hover:bg-blue-100"
+                  >
+                    <i class="fa-solid fa-folder text-orange-400"></i>
+                    <span class="group-hover:font-semibold"
+                      >Visit repository</span
+                    >
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://juliastaa.github.io/tic-tac-toe/"
+                    class="rounded-lg bg-blue-200 p-2 group hover:bg-blue-100"
+                  >
+                    <i class="fa-solid fa-globe text-blue-500"></i>
+                    <span class="group-hover:font-semibold">Live demo</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
