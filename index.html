@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
   </head>
   <body class="dark:bg-slate-950">
     <!-- header -->
-    <div class="container px-6 py-4 w-full">
+    <header id="top" class="container px-6 py-4 w-full top-0 left-0">
       <div class="container w-full">
         <div
           class="container nav-bar flex items-center justify-between w-full h-full relative"
@@ -34,11 +34,11 @@
             </button>
             <div
               id="nav-menu"
-              class="nav-menu absolute w-[250px] h-[90vh] top-[2.6rem] right-0 flex scale-0 origin-top-right flex-col gap-10 px-16 py-8 transition-all ease-in-out duration-300 bg-white lg:top-0 lg:flex-row lg:w-[700px] lg:justify-center lg:p-1 lg:h-full lg:items-center lg:text-xl lg:scale-100 lg:gap-12 lg:bg-transparent lg:left-10 xl:left-1/4 dark:text-white dark:bg-slate-900 dark:lg:bg-transparent"
+              class="nav-menu absolute w-[250px] h-[90vh] top-[2.6rem] right-0 flex scale-0 origin-top-right flex-col gap-10 px-16 py-8 transition-all ease-in-out duration-300 bg-white lg:top-0 lg:flex-row lg:w-[700px] lg:justify-center lg:p-1 lg:h-full lg:items-center lg:text-xl lg:scale-100 lg:gap-12 lg:bg-transparent lg:left-36 xl:left-1/4 dark:text-white dark:bg-slate-900 dark:lg:bg-transparent"
             >
               <ul>
                 <li class="flex flex-col items-center w-fit group">
-                  <a href="#" class="hover:text-blue-700">Home</a>
+                  <a href="#home" class="hover:text-blue-700">Home</a>
                   <span
                     class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
                   ></span>
@@ -46,7 +46,7 @@
               </ul>
               <ul>
                 <li class="flex flex-col items-center w-fit group">
-                  <a href="#" class="hover:text-blue-700">About Me</a>
+                  <a href="#about-me" class="hover:text-blue-700">About Me</a>
                   <span
                     class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
                   ></span>
@@ -54,7 +54,7 @@
               </ul>
               <ul>
                 <li class="flex flex-col items-center w-fit group">
-                  <a href="#" class="hover:text-blue-700">Skills</a>
+                  <a href="#skills" class="hover:text-blue-700">Skills</a>
                   <span
                     class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
                   ></span>
@@ -62,7 +62,7 @@
               </ul>
               <ul>
                 <li class="flex flex-col items-center w-fit group">
-                  <a href="#" class="hover:text-blue-700">Projects</a>
+                  <a href="#projects" class="hover:text-blue-700">Projects</a>
                   <span
                     class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
                   ></span>
@@ -70,7 +70,11 @@
               </ul>
               <ul>
                 <li class="flex flex-col items-center w-fit group">
-                  <a href="#" class="hover:text-blue-700">Contact</a>
+                  <a
+                    href="mailto:juliasta702@gmail.com"
+                    class="hover:text-blue-700"
+                    >Contact</a
+                  >
                   <span
                     class="w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
                   ></span>
@@ -104,7 +108,7 @@
             </div>
           </div>
           <div
-            class="light-dark-mode hidden w-[33%] lg:flex lg:justify-center lg:items-center gap-2"
+            class="light-dark-mode hidden w-[20%] lg:flex lg:justify-end lg:items-center gap-2 transition-all ease-in-out duration-300"
           >
             <div class="toggle">
               <input type="checkbox" name="" id="toggle-lg" class="hidden" />
@@ -120,12 +124,12 @@
           </div>
         </div>
       </div>
-    </div>
+    </header>
     <!-- endheader -->
 
     <!-- hero  -->
 
-    <div class="container px-6 py-4 -mt-10 lg:top-0 lg:-mt-16">
+    <div id="home" class="container px-6 py-4 -mt-10 lg:top-0 lg:-mt-16">
       <div class="flex flex-col w-full h-[100vh] md:flex-row-reverse">
         <div class="hero w-full h-full flex justify-center items-center">
           <div
@@ -149,45 +153,58 @@
               I'm from Bali
             </p>
 
-            <div class="socmed flex gap-2 mt-4 dark:text-white">
+            <div class="socmed flex gap-2 mt-4 text-slate-700 dark:text-white">
               <a
-                href="#"
+                target="_blank"
+                href="https://web.facebook.com/i.astawa.3705/"
                 class="flex justify-center items-center w-auto h-auto text-xl lg:text-4xl"
-                ><i class="fa-brands fa-facebook"></i
+                ><i class="fa-brands fa-facebook hover:text-black"></i
               ></a>
 
               <a
-                href="#"
+                target="_blank"
+                href="https://www.instagram.com/juliasta._"
                 class="flex justify-center items-center w-auto h-auto text-xl lg:text-4xl"
-                ><i class="fa-brands fa-instagram"></i
+                ><i class="fa-brands fa-instagram hover:text-black"></i
               ></a>
               <a
-                href="#"
+                target="_blank"
+                href="https://discord.com/invite/BMSnxQg8"
                 class="flex justify-center items-center w-auto h-auto text-xl lg:text-4xl"
-                ><i class="fa-brands fa-discord"></i
+                ><i class="fa-brands fa-discord hover:text-black"></i
               ></a>
               <a
-                href="#"
+                target="_blank"
+                href="https://github.com/JuliAstaa"
                 class="flex justify-center items-center w-auto h-auto text-xl lg:text-4xl"
-                ><i class="fa-brands fa-github"></i
+                ><i class="fa-brands fa-github hover:text-black"></i
               ></a>
               <a
-                href="#"
+                target="_blank"
+                href="https://x.com/astajuliii?t=DIzywNC86UM5yzy_lFgKvw&s=08"
                 class="flex justify-center items-center w-auto h-auto text-xl lg:text-4xl"
-                ><i class="fa-brands fa-telegram"></i
+                ><i class="fa-brands fa-twitter hover:text-black"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/juli-asta-58a21b27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="flex justify-center items-center w-auto h-auto text-xl lg:text-4xl"
+                ><i class="fa-brands fa-linkedin hover:text-black"></i
               ></a>
             </div>
 
             <div
               class="cv border-2 border-blue-700 flex justify-center items-center p-[3px] w-fit h-fit rounded-2xl mt-3 group hover:bg-blue-700"
             >
-              <button
+              <a
+                href="./src/file/CV.pdf"
+                download=""
                 class="flex justify-center items-center w-36 h-5 bg-blue-700 p-4 rounded-xl group-hover:bg-white"
               >
                 <span class="font-semibold text-white group-hover:text-blue-700"
                   >Download CV</span
                 >
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -198,6 +215,7 @@
     <!-- about me -->
 
     <div
+      id="about-me"
       class="container bg-slate-100 w-full h-auto p-4 lg:flex lg:justify-center lg:py-0 lg:px-20 xl:px-[12.5rem] dark:bg-slate-900"
     >
       <div class="flex justify-center items-center h-[20rem]">
@@ -227,7 +245,7 @@
     <!--  end about me -->
 
     <!-- skills -->
-    <div class="container mt-8">
+    <div id="skills" class="container mt-8">
       <div class="skills w-100 h-full flex relative">
         <span
           class="text-center text-2xl font-semibold text-white p-4 w-3/4 bg-blue-500 h-full relative after:-translate-y-6 after:origin-top-left after:w-20 after:h-20 after:absolute after:right-0 after:top-0 after:rotate-45 after:bg-white after:translate-x-16 lg:w-1/2 dark:after:bg-slate-950"
@@ -349,7 +367,10 @@
     <!-- end skills   -->
 
     <!-- project -->
-    <div class="project bg-slate-100 w-full h-auto dark:bg-slate-900">
+    <div
+      id="projects"
+      class="project bg-slate-100 w-full h-auto dark:bg-slate-900"
+    >
       <div class="container">
         <div class="projects w-100 h-full flex relative pt-10 justify-end">
           <span
@@ -359,10 +380,10 @@
         </div>
       </div>
       <div
-        class="container w-full h-full p-16 flex flex-col gap-4 lg:flex-row lg:justify-between"
+        class="container w-full h-full p-4 flex flex-col gap-4 lg:p-16 lg:flex-row lg:justify-between"
       >
         <!-- birthday -->
-        <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+        <div class="p-4 px-0 w-full lg:w-[45%] xl:w-[30%]">
           <div class="img flex flex-col relative group">
             <div
               class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
@@ -379,11 +400,11 @@
               <div
                 class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-center items-center"
               >
-                <h2 class="sm:text-lg text-white">Birthday Countdown</h2>
-                <p class="sm:text-base text-[10px] text-slate-200">
+                <h2 class="sm:text-xl text-white">Birthday Countdown</h2>
+                <p class="sm:text-base text-sm text-slate-200">
                   A web application for counting down birthdays.
                 </p>
-                <p class="sm:text-base text-[10px] text-white font-semibold">
+                <p class="sm:text-lg text-[15px] text-white font-semibold">
                   Click for more...
                 </p>
                 <a
@@ -406,12 +427,16 @@
                   X
                 </button>
               </div>
-              <div class="flex flex-col items-center justify-center p-16">
-                <div class="img w-1/2 h-1/2">
+              <div
+                class="flex flex-col items-center justify-center p-4 lg:p-16"
+              >
+                <div class="img w-full h-full lg:w-1/2 lg:h-1/2">
                   <img src="./src/img/birthday-countdown.png" alt="" />
                 </div>
                 <div class="modal-title mt-4">
-                  <h1 class="font-bold text-2xl capitalize dark:text-white">
+                  <h1
+                    class="font-bold text-xl capitalize text-center dark:text-white lg:text-2xl"
+                  >
                     A web application for counting down birthdays
                   </h1>
                 </div>
@@ -423,7 +448,7 @@
                 </p>
                 <br />
                 <br />
-                <div class="m-button flex gap-4">
+                <div class="m-button flex flex-col gap-4 lg:flex-row">
                   <a
                     target="_blank"
                     href="https://github.com/JuliAstaa/birthday-countdown"
@@ -448,7 +473,7 @@
           </div>
         </div>
         <!-- temperature -->
-        <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+        <div class="p-4 px-0 w-full lg:w-[45%] xl:w-[30%]">
           <div class="img flex flex-col relative group">
             <div
               class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
@@ -466,10 +491,10 @@
                 class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-center items-center"
               >
                 <h2 class="sm:text-lg text-white">Temperature Conversion</h2>
-                <p class="sm:text-base text-[10px] text-slate-200">
+                <p class="sm:text-base text-sm text-slate-200">
                   Website for converting temperature
                 </p>
-                <p class="sm:text-base text-[10px] text-white font-semibold">
+                <p class="sm:text-base text-[15px] text-white font-semibold">
                   Click for more...
                 </p>
                 <a
@@ -492,12 +517,16 @@
                   X
                 </button>
               </div>
-              <div class="flex flex-col items-center justify-center p-16">
-                <div class="img w-1/2 h-1/2">
+              <div
+                class="flex flex-col items-center justify-center p-4 lg:p-16"
+              >
+                <div class="img w-full h-full lg:w-1/2 lg:h-1/2">
                   <img src="./src/img/temperature-conversion.png" alt="" />
                 </div>
                 <div class="modal-title mt-4">
-                  <h1 class="font-bold text-2xl capitalize dark:text-white">
+                  <h1
+                    class="font-bold text-2xl capitalize dark:text-white text-center"
+                  >
                     Temperature Conversion
                   </h1>
                 </div>
@@ -510,7 +539,7 @@
                 </p>
                 <br />
                 <br />
-                <div class="m-button flex gap-4">
+                <div class="m-button flex flex-col gap-4 lg:flex-row">
                   <a
                     target="_blank"
                     href="https://github.com/JuliAstaa/TemperatureConversion"
@@ -535,7 +564,7 @@
           </div>
         </div>
         <!-- tic-tac-toe -->
-        <div class="p-4 sm:px-16 lg:px-0 lg:w-[45%] xl:w-[30%]">
+        <div class="p-4 px-0 w-full lg:w-[45%] xl:w-[30%]">
           <div class="img flex flex-col relative group">
             <div
               class="w-full rounded-sm transition-all ease-in-out duration-500 hover:scale-95 group overflow-hidden"
@@ -549,10 +578,10 @@
                 class="click-to-modal text absolute bottom-0 w-full h-full p-4 text-center bg-[rgba(0,0,0,0.5)] transition-all ease-in-out duration-500 origin-bottom scale-0 group-hover:scale-100 flex flex-col justify-center items-center"
               >
                 <h2 class="sm:text-lg text-white">Tic Tac Toe</h2>
-                <p class="sm:text-base text-[10px] text-slate-200">
+                <p class="sm:text-base text-sm text-slate-200">
                   Tic-tac-toe game website
                 </p>
-                <p class="sm:text-base text-[10px] text-white font-semibold">
+                <p class="sm:text-base text-[15px] text-white font-semibold">
                   Click for more...
                 </p>
                 <a
@@ -575,12 +604,16 @@
                   X
                 </button>
               </div>
-              <div class="flex flex-col items-center justify-center p-16">
-                <div class="img w-1/2 h-1/2">
+              <div
+                class="flex flex-col items-center justify-center p-4 lg:p-16"
+              >
+                <div class="img w-full h-full lg:w-1/2 lg:h-1/2">
                   <img src="./src/img/tic-tac-toe.png" alt="" />
                 </div>
                 <div class="modal-title mt-4">
-                  <h1 class="font-bold text-2xl capitalize dark:text-white">
+                  <h1
+                    class="font-bold text-2xl capitalize dark:text-white text-center"
+                  >
                     Tic-tac-toe
                   </h1>
                 </div>
@@ -592,7 +625,7 @@
                 </p>
                 <br />
                 <br />
-                <div class="m-button flex gap-4">
+                <div class="m-button flex flex-col gap-4 lg:flex-row">
                   <a
                     target="_blank"
                     href="https://github.com/JuliAstaa/tic-tac-toe"
@@ -619,6 +652,165 @@
       </div>
     </div>
     <!-- project -->
+
+    <!-- footer -->
+    <footer class="footer w-full h-auto p-4 bg-slate-200 dark:bg-black">
+      <div
+        class="footer-wrapper flex flex-col items-start justify-between w-full h-full gap-24 lg:flex-row lg:p-16"
+      >
+        <!-- about me -->
+        <div class="footer-about-me w-full">
+          <p class="font-bold text-xl dark:text-white">About Me</p>
+          <p class="text-slate-700 dark:text-slate-300">
+            a kid who wants to be a programmer
+          </p>
+        </div>
+        <!-- sosmed -->
+        <div class="footer-sosmed w-full flex flex-col">
+          <p class="font-bold text-xl dark:text-white">Follow Me</p>
+          <ul
+            class="flex flex-col justify-center items-start dark:text-slate-300 lg:dark:text-slate-500"
+          >
+            <li
+              class="w-fit cursor-pointer group hover:text-slate-900 flex items-center gap-2 dark:hover:text-slate-300"
+            >
+              <a
+                target="_blank"
+                href="https://github.com/JuliAstaa"
+                class="w-8 flex justify-center items-center"
+                ><i class="fa-brands fa-github block text-2xl"></i
+              ></a>
+              <span
+                class="flex flex-col items-center scale-1 origin-left transition-all ease-in-out duration-300 text-lg lg:scale-0 group-hover:scale-100"
+                >github
+                <span
+                  class="lg:hidden w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                ></span>
+              </span>
+            </li>
+            <li
+              class="w-fit cursor-pointer group hover:text-slate-900 flex items-center gap-2 dark:hover:text-slate-300"
+            >
+              <a
+                target="_blank"
+                href="https://www.instagram.com/juliasta._"
+                class="w-8 flex justify-center items-center"
+                ><i class="fa-brands fa-instagram text-xl"></i
+              ></a>
+              <span
+                class="flex flex-col items-center scale-1 origin-left transition-all ease-in-out duration-300 text-lg lg:scale-0 group-hover:scale-100"
+                >instagram
+                <span
+                  class="lg:hidden flex w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                ></span>
+              </span>
+            </li>
+            <li
+              class="w-fit cursor-pointer group hover:text-slate-900 flex items-center gap-2 dark:hover:text-slate-300"
+            >
+              <a
+                target="_blank"
+                href="https://web.facebook.com/i.astawa.3705/"
+                class="w-8 flex justify-center items-center"
+                ><i class="fa-brands fa-facebook text-xl"></i
+              ></a>
+              <span
+                class="flex flex-col items-center scale-1 origin-left transition-all ease-in-out duration-300 text-lg lg:scale-0 group-hover:scale-100"
+                >facebook
+                <span
+                  class="lg:hidden flex w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                ></span>
+              </span>
+            </li>
+            <li
+              class="w-fit cursor-pointer group hover:text-slate-900 flex items-center gap-2 dark:hover:text-slate-300"
+            >
+              <a
+                target="_blank"
+                href="https://x.com/astajuliii?t=DIzywNC86UM5yzy_lFgKvw&s=08"
+                class="w-8 flex justify-center items-center"
+                ><i class="fa-brands fa-twitter text-xl"></i
+              ></a>
+              <span
+                class="flex flex-col items-center scale-1 origin-left transition-all ease-in-out duration-300 text-lg lg:scale-0 group-hover:scale-100"
+                >twitter
+                <span
+                  class="lg:hidden flex w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                ></span>
+              </span>
+            </li>
+            <li
+              class="w-fit cursor-pointer group hover:text-slate-900 flex items-center gap-2 dark:hover:text-slate-300"
+            >
+              <a
+                target="_blank"
+                href="https://discord.com/invite/BMSnxQg8"
+                class="w-8 flex justify-center items-center"
+                ><i class="fa-brands fa-discord text-xl"></i
+              ></a>
+              <span
+                class="flex flex-col items-center scale-1 origin-left transition-all ease-in-out duration-300 text-lg lg:scale-0 group-hover:scale-100"
+                >discord
+                <span
+                  class="lg:hidden flex w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                ></span>
+              </span>
+            </li>
+            <li
+              class="w-fit cursor-pointer group hover:text-slate-900 flex items-center gap-2 dark:hover:text-slate-300"
+            >
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/juli-asta-58a21b27a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="w-8 flex justify-center items-center"
+                ><i class="fa-brands fa-linkedin text-xl"></i
+              ></a>
+              <span
+                class="flex flex-col items-center scale-1 origin-left transition-all ease-in-out duration-300 text-lg lg:scale-0 group-hover:scale-100"
+                >linkedin
+                <span
+                  class="lg:hidden flex w-3/4 h-[1px] bg-blue-700 scale-0 origin-center transition-all ease-in-out duration-300 group-hover:scale-100 lg:h-[2px]"
+                ></span>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <!-- contact -->
+        <div class="footer-about-me w-full">
+          <p class="font-bold text-xl dark:text-white">Contact Me</p>
+          <div
+            class="w-fit cursor-pointer group hover:text-slate-900 flex items-center gap-2"
+          >
+            <a
+              target="_blank"
+              href="mailto:juliasta702@gmail.com"
+              class="w-8 flex justify-start gap-2 items-center dark:text-slate-300"
+              ><i class="fa-solid fa-envelope block text-2xl"></i>
+              <span class="dark:text-slate-300">juliasta702@gmail.com </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line mx-auto w-[80%] h-[1px] bg-slate-400 my-16"></div>
+      <div class="creator text-center">
+        <span class="text-slate-500">created by juliasta</span>
+      </div>
+    </footer>
+    <!-- endfooter -->
+
+    <!-- arrow up -->
+    <a
+      href="#home"
+      id="arrow-top"
+      class="fixed w-16 h-16 rounded-full bg-[rgba(203,213,225,0.5)] bottom-8 right-8 flex justify-center items-center"
+    >
+      <span>
+        <i
+          class="fa-solid fa-arrow-up text-2xl font-semibold dark:text-white"
+        ></i
+      ></span>
+    </a>
+
     <script src="./src/javascript/script.js"></script>
   </body>
 </html>

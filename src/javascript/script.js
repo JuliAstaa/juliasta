@@ -49,3 +49,17 @@ clickToModal.forEach((clicked, index) => {
     });
   });
 });
+
+window.onscroll = () => {
+  const header = document.querySelector("header");
+  const arrowTop = document.querySelector("#arrow-top");
+  const fixNav = header.offsetTop;
+
+  window.pageYOffset > fixNav
+    ? header.classList.add("navbar-fixed")
+    : header.classList.remove("navbar-fixed");
+
+  window.pageYOffset > fixNav
+    ? arrowTop.classList.remove("hidden")
+    : arrowTop.classList.add("hidden");
+};
